@@ -1,0 +1,5 @@
+ssh -L 8785:localhost:8785 arman11@hades.ece.ucdavis.edu
+
+docker start -ai arman11_lab
+
+jupyter notebook --no-browser --ip=0.0.0.0 --allow-root --port=8785
